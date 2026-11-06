@@ -58,7 +58,10 @@ INSTRUMENTS = {
     "USDJPY": dict(ticker="JPY=X",    contract=100000, base_usd=True,  conv="div", cost=0.00015, pip=0.01),
     "USDCAD": dict(ticker="CAD=X",    contract=100000, base_usd=True,  conv="div", cost=0.00025, pip=0.0001),
     "USDCHF": dict(ticker="CHF=X",    contract=100000, base_usd=True,  conv="div", cost=0.00025, pip=0.0001),
-    "XAUUSD": dict(ticker="GC=F",     contract=100,    base_usd=False, conv="usd", cost=0.00040, pip=0.1),
+    "XAUUSD": dict(ticker="GC=F",     contract=100,    base_usd=False, conv="usd", cost=0.00040, pip=    "BTCUSD": dict(ticker="BTC-USD",  contract=1,      base_usd=False, conv="usd", cost=0.00080, pip=1.0),
+    "BTCUSD": dict(ticker="BTC-USD",  contract=1,      base_usd=False, conv="usd", cost=0.00080, pip=1.0),
+
+                   
 }
 # ======================================================================
 
