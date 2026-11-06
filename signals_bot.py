@@ -1,7 +1,7 @@
 """
 BOT DE SIGNAUX POUR METATRADER 5 MOBILE (100 % gratuit)
 =======================================================
-Le bot analyse le forex et l'or (données Yahoo Finance), calcule le risque
+Le bot analyse le forex, l'or et le Bitcoin (données Yahoo Finance), calcule le risque
 (EWMA, ATR, VaR/CVaR, probabilité TP-avant-SL, Kelly) et vous envoie sur
 Telegram : sens, entrée, stop, take profit et taille de lot conseillée.
 Vous passez ensuite l'ordre à la main dans MetaTrader 5.
@@ -58,10 +58,8 @@ INSTRUMENTS = {
     "USDJPY": dict(ticker="JPY=X",    contract=100000, base_usd=True,  conv="div", cost=0.00015, pip=0.01),
     "USDCAD": dict(ticker="CAD=X",    contract=100000, base_usd=True,  conv="div", cost=0.00025, pip=0.0001),
     "USDCHF": dict(ticker="CHF=X",    contract=100000, base_usd=True,  conv="div", cost=0.00025, pip=0.0001),
-    "XAUUSD": dict(ticker="GC=F",     contract=100,    base_usd=False, conv="usd", cost=0.00040, pip=    "BTCUSD": dict(ticker="BTC-USD",  contract=1,      base_usd=False, conv="usd", cost=0.00080, pip=1.0),
+    "XAUUSD": dict(ticker="GC=F",     contract=100,    base_usd=False, conv="usd", cost=0.00040, pip=0.1),
     "BTCUSD": dict(ticker="BTC-USD",  contract=1,      base_usd=False, conv="usd", cost=0.00080, pip=1.0),
-
-                   
 }
 # ======================================================================
 
