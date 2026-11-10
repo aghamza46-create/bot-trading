@@ -1,7 +1,7 @@
 """
 BOT DE SIGNAUX POUR METATRADER 5 MOBILE (100 % gratuit)
 =======================================================
-Le bot analyse le forex, l'or et le Bitcoin (données Yahoo Finance), calcule le risque
+Le bot analyse le forex et l'or (données Yahoo Finance), calcule le risque
 (EWMA, ATR, VaR/CVaR, probabilité TP-avant-SL, Kelly) et vous envoie sur
 Telegram : sens, entrée, stop, take profit et taille de lot conseillée.
 Vous passez ensuite l'ordre à la main dans MetaTrader 5.
@@ -27,8 +27,8 @@ import pandas as pd
 # =============================== CONFIG ===============================
 CAPITAL = float(os.getenv("CAPITAL", "1000"))       # capital du compte (USD)
 LEVERAGE = float(os.getenv("LEVERAGE", "100"))      # levier du compte
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "").strip()          # .strip() enlève un retour à la ligne collé par erreur
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 
 INTERVALLE = "15m"
 PERIODE = "5d"
